@@ -51,7 +51,7 @@ if(viewMarker){
 }
 
 //TILES
-var tile_Layer = L.tileLayer('src/img/tiles/{z}_{x}_{y}.png', {
+var tile_Layer = L.tileLayer('https://andremalveira.github.io/map_GoldenAppleArchipelago/src/img/tiles/{z}_{x}_{y}.png', {
     attribution: ' developed by <a target="_blank" href="https://github.com/andremalveira" title="Developer">andremalveira</a>',
     continuousWorld: false,
     noWrap: true,  
