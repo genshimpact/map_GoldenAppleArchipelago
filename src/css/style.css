@@ -1,0 +1,85 @@
+/*
+map_GoldenAppleArchipelago | Genshin Impact
+Author: "https://github.com/andremalveira" | @andremalveira
+Junho de 2021.
+*/
+:root {
+  --cursor: url(../img/cursor_mouse.png), default;
+}
+@font-face {
+  font-family: 'font-design';
+  
+  src: url('../font/font-design.woff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'font-design';
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: var(--cursor);
+  letter-spacing: 0.4px;
+  font-size: 1rem;
+}
+
+#mapid { height: 100vh; }
+
+.leaflet-grab,
+.leaflet-interactive {
+  cursor: var(--cursor) !important;
+}
+
+.leaflet-control-layers-base,
+.leaflet-control-layers-separator,
+.leaflet-control-layers-selector {
+  display: none;
+}
+
+.leaflet-control-attribution,
+.leaflet-control-attribution a {
+  font-family: sans-serif;
+  font-size: 0.7rem !important;
+}
+
+
+
+@media (max-width: 420px) {
+
+  .leaflet-top.leaflet-left {
+    bottom: 0;
+    top: inherit;
+    left: inherit;
+    width: 100%;
+  }
+  .leaflet-control-layers.leaflet-control-layers-expanded.leaflet-control {
+    margin: 0;
+    padding: 0.2rem;
+    border-radius: 0px;
+    border: 0;
+    width: 100%;
+    background: #2c2c2cd1;
+  }
+  .leaflet-control-layers-overlays {
+    display: flex;
+  }
+
+  .leaflet-top.leaflet-left section .leaflet-control-layers-overlays {
+    display: flex;
+    justify-content: space-around;
+  }
+  .leaflet-top.leaflet-left section .leaflet-control-layers-overlays label {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+  .leaflet-top.leaflet-left section .leaflet-control-layers-overlays label div span img {
+    width: 40px;
+  }
+
+  .leaflet-bottom.leaflet-right {
+    display: none;
+  }
+
+}
